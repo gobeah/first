@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @customer.name
+p
+  strong Lastname:
+  = @customer.lastname
+p
+  strong Middlename:
+  = @customer.middlename
+
+= link_to 'Edit', edit_customer_path(@customer)
+'|
+= link_to 'Back', customers_path

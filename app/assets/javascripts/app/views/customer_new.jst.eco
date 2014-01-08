@@ -1,0 +1,14 @@
+<div class="customer-modal">
+	<div class="customer-new-c">
+		<h1>New customer</h1>
+  	<a class="customer-new-close" href="#">Cancel</a>
+
+  	<%= @temp %>
+
+
+
+	</div>  
+</div>  
+
+
+

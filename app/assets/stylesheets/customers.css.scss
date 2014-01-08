@@ -1,0 +1,28 @@
+// Place all the styles related to the Customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.customer-modal {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+}
+
+.customer-new-c {  	
+  width: 600px;
+  min-height: 400px;
+  border: 1px solid red;
+  margin: 100px auto;  
+}
+
+.customer-new-close {
+	color: red;
+	font-size: 150%;
+}

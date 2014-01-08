@@ -1,0 +1,33 @@
+h1 Клиенты
+
+table
+  tr
+    th Name
+    th Lastname
+    th Middlename
+    th
+    th
+    th
+
+  - @customers.each do |customer|
+    tr
+      td = customer.name
+      td = customer.lastname
+      td = customer.middlename
+      td = link_to 'Show', customer
+      td = link_to 'Edit', edit_customer_path(customer)
+      td = link_to 'Destroy', customer, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+
+div id="app"
+  a class="customer-new" href="#" ДОБАВИТЬ КЛИЕНТА МОДАЛЬНО (тут я пробую добавить через спайн)
+br
+= link_to 'ДОБАВИТЬ КЛИЕНТА (это через руби вьюху)', new_customer_path
+javascript:
+  jQuery(function(){
+    new App.Customers({el: $("#app")});
+  });
+
+
